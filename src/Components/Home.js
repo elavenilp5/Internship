@@ -3,6 +3,7 @@ import Sidebar from './Sidebar'
 import Tile from './Tile'
 import ReactDOM from "react-dom";
 import ListSharpIcon from '@mui/icons-material/ListSharp';
+import SmallTile from './SmallTile';
 
 
 
@@ -19,10 +20,13 @@ function Home() {
                 <div id='head1'><h1 className='heading1'>BOSCH</h1></div>
                 <div id='head2'><h1 className='heading2' > EHB PROCESS COMPASS</h1></div>
                 <Tile />
+                <SmallTile />
+                <SmallTile />
 
                 {/* <h1 className='heading' > EHB PROCESS COMPASS &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;BOSCH</h1> */}
 
             </div>
+
 
 
 

@@ -1,17 +1,21 @@
 import { TileData } from "./TileData";
-import React from "react";
-import { fontWeight } from "@mui/system";
+import React, { useState } from "react";
+import LargeTile from "./LargeTile";
+
 function Tile() {
+
     return (
         <div className='tilebar'>
-            {TileData.map((val, key) => {
-                return (
-                    <ul className="tilebarlist">
+            <ul className="tilebarlist">
+                {TileData.map((val, key) => {
+                    return (
 
-                        <li className="tilerow">  <div className="tile" key={key} style={{ backgroundColor: val.background }}>{val.title}</div></li>
-                    </ul>
-                )
-            })}
+                        <LargeTile val={val} key={key} />
+
+
+                    )
+                })}
+            </ul>
 
         </div>
     )

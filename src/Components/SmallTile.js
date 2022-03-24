@@ -1,13 +1,24 @@
-
+import { SmallTileData } from "./SmallTileData";
 import React from "react";
 
 function SmallTile() {
     return (
-        <div>
+        <div className="smalltilebar">
+            <ul className="smalltilebarlist">
+                {SmallTileData.map((val, key) => {
+                    return (
 
-            <h2>Free for new favorites</h2>
+                        <li className="stilerow">  <div className="smalltile"  ><h4 className="title">{val.title}</h4></div></li>
+
+
+                    )
+                })}
+            </ul>
+
+
+
 
         </div>
     )
 }
-export default Tile;
+export default SmallTile;

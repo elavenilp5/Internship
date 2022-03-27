@@ -1,5 +1,5 @@
 import { TileData } from "./TileData";
-import React, { useState } from "react";
+import React from "react";
 import LargeTile from "./LargeTile";
 
 function Tile() {

@@ -18,6 +18,7 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
+  margin-top: 300px;
   background-color: #144273;
 }
 .sidebarlist .row {
@@ -51,8 +52,8 @@ body {
   padding: 20px;
 }
 .smalltile {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   left: 501px;
 
   margin-top: 10px;
@@ -72,8 +73,8 @@ body {
 }
 
 .tile {
-  width: 210px;
-  height: 210px;
+  width: 250px;
+  height: 250px;
   left: 501px;
   top: 99px;
   /* display: flex;
@@ -137,4 +138,23 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: medium;
   font-weight: 200;
+}
+
+.footlist {
+  list-style-type: none;
+  gap: 40px;
+  display: flex;
+  flex-direction: row;
+
+  color: white;
+}
+
+.name {
+  float: right;
+  margin-left: 600px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
 }

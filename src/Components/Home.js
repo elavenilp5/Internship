@@ -4,6 +4,7 @@ import Tile from './Tile'
 import ReactDOM from "react-dom";
 import ListSharpIcon from '@mui/icons-material/ListSharp';
 import SmallTile from './SmallTile';
+import Footer from './Footer';
 
 
 
@@ -22,10 +23,13 @@ function Home() {
                 <Tile />
                 <SmallTile />
                 <SmallTile />
+                <Footer />
 
-                {/* <h1 className='heading' > EHB PROCESS COMPASS &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;BOSCH</h1> */}
+
+
 
             </div>
+
 
 
 

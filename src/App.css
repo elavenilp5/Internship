@@ -20,6 +20,7 @@ body {
   margin: 0;
   margin-top: 300px;
   background-color: #144273;
+  gap: 20px;
 }
 .sidebarlist .row {
   width: 100%;
@@ -46,6 +47,9 @@ body {
   background-color: black;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
 } */
 
 .title {
@@ -54,9 +58,7 @@ body {
 .smalltile {
   width: 120px;
   height: 120px;
-  left: 501px;
 
-  margin-top: 10px;
   text-align: center;
   color: white;
   background-color: #2b6c90;
@@ -66,10 +68,13 @@ body {
   padding: 10px;
 }
 .smalltilebarlist {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-auto-rows: 120px;
+  gap: 10px 10px;
+  width: 600px;
   list-style-type: none;
+  margin-left: 10px;
 }
 
 .tile {
@@ -97,7 +102,9 @@ body {
   gap: 10px;
   list-style-type: none;
 }
-
+.tilerow {
+  position: relative;
+}
 .home {
   display: flex;
   align-items: flex-start;
@@ -130,14 +137,18 @@ body {
 
 .tool {
   position: absolute;
-  width: max-content;
+  width: 250px;
   padding: 0.5rem;
   cursor: pointer;
   margin-top: 10px;
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: medium;
-  font-weight: 200;
+  font-weight: 100;
+}
+
+.tool .toolhead {
+  color: yellow;
 }
 
 .footlist {
@@ -157,4 +168,32 @@ body {
 .link {
   color: white;
   text-decoration: none;
+}
+
+.navwrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footerbutton {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.foot {
+  position: fixed;
+  bottom: 0;
+}
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: absolute;
+  top: -10px;
+  border-bottom: 8px solid black;
+  right: 15px;
 }

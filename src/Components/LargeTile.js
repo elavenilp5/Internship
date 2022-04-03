@@ -15,8 +15,13 @@ function LargeTile({ val }) {
       </div>
       {hover && (
         <div className="tool " style={{ backgroundColor: val.background }}>
-          <div className="arrow-up"></div>
-          <h4 classname="toolhead">{val.title}</h4>
+          {/* <div className="arrow-up"></div> */}
+          <h4
+            classname="toolhead"
+            style={{ color: "#FDCA0B", backgroundColor: "##9AAEC0" }}
+          >
+            {val.title}
+          </h4>
           <p>{val.content}</p>
         </div>
       )}

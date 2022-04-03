@@ -10,15 +10,34 @@ export const SidebarData = [
     link: "/home",
   },
   {
-    icon: <SettingsIcon sx={{ fontSize: "50px" }} />,
+    icon: (
+      <SettingsIcon
+        sx={{
+          fontSize: "50px",
+        }}
+      />
+    ),
     link: "/settings",
   },
   {
-    icon: <SearchIcon sx={{ fontSize: "50px" }} />,
+    icon: (
+      <SearchIcon
+        sx={{
+          fontSize: "50px",
+        }}
+      />
+    ),
     link: "/search",
   },
   {
-    icon: <HelpOutlineOutlinedIcon sx={{ fontSize: "50px" }} />,
+    icon: (
+      <HelpOutlineOutlinedIcon
+        sx={{
+          fontSize: "50px",
+          color: "info.main",
+        }}
+      />
+    ),
     link: "/help",
   },
 ]

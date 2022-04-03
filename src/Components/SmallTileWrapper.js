@@ -46,45 +46,5 @@ function SmallTileWrapper() {
       </Droppable>
     </DragDropContext>
   )
-  // const [characters, updateCharacters] = useState(SmallTileData)
-  // function handleOnDragEnd(result) {
-  //   if (!result.destination) return
-  //   const items = Array.from(characters)
-  //   const [reorderedItem] = items.splice(result.source.index, 1)
-  //   items.splice(result.destination.index, 0, reorderedItem)
-  //   updateCharacters(items)
-  // }
-  // return (
-  //   <DragDropContext onDragEnd={handleOnDragEnd}>
-  //     <Droppable droppableId="smalltilebarlist">
-  //       {(provided) => (
-  //         <ul
-  //           className="smalltilebarlist"
-  //           {...provided.droppableProps}
-  //           ref={provided.innerRef}
-  //         >
-  //           {SmallTileData.map((val, key, id, index) => {
-  //             return (
-  //               <Draggable key={key} draggableId={key} index={index}>
-  //                 {(provided) => (
-  //                   <li
-  //                     {...provided.draggableProps}
-  //                     {...provided.dragHandleProps}
-  //                     ref={provided.innerRef}
-  //                   >
-  //                     <div className="smalltile">
-  //                       <h4 className="title">{val.title}</h4>
-  //                     </div>
-  //                   </li>
-  //                 )}
-  //               </Draggable>
-  //             )
-  //           })}
-  //           {provided.placeholder}
-  //         </ul>
-  //       )}
-  //     </Droppable>
-  //   </DragDropContext>
-  // )
 }
 export default SmallTileWrapper

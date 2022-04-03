@@ -35,11 +35,17 @@ body {
 }
 .sidebarlist .row:hover {
   cursor: pointer;
-  background-color: #315583;
+  background-color: none;
 }
-.row #icon {
+.row {
   margin-top: 50px;
   flex: 100%;
+  gap: 20px;
+}
+.icondiv {
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+  height: 90px;
 }
 
 /* .wrapper {
@@ -58,11 +64,10 @@ body {
 .smalltile {
   width: 120px;
   height: 120px;
-
+  font-family: "Segoe UI", Segoe, Tahoma, Arial, Helvetica, sans-serif;
   text-align: center;
   color: white;
   background-color: #2b6c90;
-  font-weight: 100;
 }
 .smalltilebar {
   padding: 10px;
@@ -74,7 +79,7 @@ body {
   gap: 10px 10px;
   width: 600px;
   list-style-type: none;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .tile {
@@ -89,7 +94,13 @@ body {
   text-align: left;
   text-indent: 20px;
   color: white;
-  font-weight: 300;
+  font-weight: bold;
+  font-family: "Segoe UI", Segoe, Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.tile:hover {
+  border: 2px solid #9aaec0;
+  transform: scale(1);
 }
 
 .tilebar {
@@ -137,14 +148,13 @@ body {
 
 .tool {
   position: absolute;
+  /* left: 250px; */
   width: 250px;
   padding: 0.5rem;
   cursor: pointer;
   margin-top: 10px;
   color: white;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: medium;
-  font-weight: 100;
+  font-family: "Segoe UI", Segoe, Tahoma, Arial, Helvetica, sans-serif;
 }
 
 .tool .toolhead {

@@ -11,15 +11,15 @@ body {
 .sidebar {
   height: 100vh;
   width: 100px;
-  background-color: #144273;
+  background-color: #003b6a;
 }
 .sidebarlist {
   height: auto;
   width: 100%;
   padding: 0;
   margin: 0;
-  margin-top: 300px;
-  background-color: #144273;
+  margin-top: 260px;
+  background-color: #003b6a;
   gap: 20px;
 }
 .sidebarlist .row {
@@ -32,20 +32,19 @@ body {
   color: white;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 .sidebarlist .row:hover {
   cursor: pointer;
   background-color: none;
 }
 .row {
-  margin-top: 50px;
   flex: 100%;
-  gap: 20px;
 }
 .icondiv {
-  margin-bottom: 20px;
-  padding-bottom: 50px;
-  height: 90px;
+  height: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /* .wrapper {
@@ -66,8 +65,8 @@ body {
   height: 120px;
   font-family: "Segoe UI", Segoe, Tahoma, Arial, Helvetica, sans-serif;
   text-align: center;
-  color: white;
-  background-color: #2b6c90;
+  color: #8da7bc;
+  background-color: #1a4f79;
 }
 .smalltilebar {
   padding: 10px;
@@ -133,17 +132,23 @@ body {
 }
 .wrapper {
   margin-left: 10px;
-  background-color: #144273;
+  background-color: #003b6a;
   width: 100%;
   height: 100vh;
 }
 
 #head1 {
   float: right;
-  margin-right: 20px;
+
   background-color: white;
   width: fit-content;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   height: fit-content;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .tool {
@@ -207,3 +212,20 @@ body {
   border-bottom: 8px solid black;
   right: 15px;
 }
+
+.logoimg {
+  width: fit-content;
+  height: auto;
+}
+
+.imgdiv {
+  width: 250px;
+  height: 50px;
+  float: right;
+}
+.nav {
+  margin-left: 680px;
+}
+/* .nav:hover {
+  background-color: #dcdfed;
+} */

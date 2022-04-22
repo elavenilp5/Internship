@@ -75,10 +75,13 @@ body {
   display: grid;
   grid-template-columns: repeat(6, auto);
   grid-auto-rows: 120px;
-  gap: 10px 10px;
-  width: 600px;
+  /* display: flex; */
+
+  gap: 10px;
+  width: 780px;
+  /* width: 850px; */
   list-style-type: none;
-  margin-left: 5px;
+  margin-left: 40px;
 }
 
 .tile {

@@ -31,6 +31,7 @@ function Home() {
         </div>
         <Tile />
         <SmallTileWrapper />
+        <SmallTileWrapper />
         <Footer />
       </div>
     </div>

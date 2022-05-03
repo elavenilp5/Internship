@@ -3,6 +3,7 @@ import Sidebar from "./Sidebar"
 import Tile from "./Tile"
 import SmallTileWrapper from "./SmallTileWrapper"
 import Footer from "./Footer"
+import List from "./List"
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown"
 
 function Home() {
@@ -13,7 +14,7 @@ function Home() {
         <div className="navwrapper">
           <div id="head1">
             {" "}
-            <img src="Bosch_logo.png" alt="logo" className="imgdiv" />
+            <img src="Bosch_logo1.png" alt="logo" className="imgdiv" />
             {/* <h1 className="heading1">BOSCH</h1>{" "} */}
           </div>
           <div className="nav">
@@ -30,8 +31,10 @@ function Home() {
           </div>
         </div>
         <Tile />
-        <SmallTileWrapper />
-        <SmallTileWrapper />
+
+        {/* <SmallTileWrapper /> */}
+        {/* <SmallTileWrapper /> */}
+        <List />
         <Footer />
       </div>
     </div>

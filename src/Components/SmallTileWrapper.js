@@ -47,7 +47,7 @@ class SmallTileWrapper extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      items: getItems(6),
+      items: getItems(12),
     }
     this.onDragEnd = this.onDragEnd.bind(this)
   }
@@ -74,7 +74,12 @@ class SmallTileWrapper extends Component {
   render() {
     return (
       <DragDropContext onDragEnd={this.onDragEnd}>
-        <Droppable droppableId="droppable" direction="horizontal">
+        <Droppable
+          droppableId="droppable"
+          direction="horizontal"
+          isCombineEnabled="true"
+          ignoreContainerClipping="true"
+        >
           {(provided, snapshot) => (
             <div
               className="smalltilebarlist"
@@ -90,16 +95,17 @@ class SmallTileWrapper extends Component {
                       ref={provided.innerRef}
                       {...provided.draggableProps}
                       {...provided.dragHandleProps}
-                      style={getItemStyle(
-                        snapshot.isDragging,
-                        provided.draggableProps.style
-                      )}
+                      // style={getItemStyle(
+                      //   snapshot.isDragging,
+                      //   provided.draggableProps.style
+                      // )}
                     >
                       {item.content}
                     </div>
                   )}
                 </Draggable>
               ))}
+
               {provided.placeholder}
             </div>
           )}
@@ -124,34 +130,41 @@ class SmallTileWrapper extends Component {
 //   }
 //   return (
 //     <DragDropContext onDragEnd={onEnd}>
-//       <Droppable droppableId="12345678" direction="horizontal">
+//       <Droppable
+//         droppableId="droppable"
+//         direction="horizontal"
+//         isCombineEnabled="true"
+//       >
 //         {(provided, snapshot) => (
-//           <ul
+//           <div
 //             className="smalltilebarlist"
 //             {...provided.droppableProps}
 //             ref={provided.innerRef}
 //           >
-//             {list.map((val, key, index) => {
-//               return (
-//                 <Draggable draggableId={val.id} key={val.id} index={index}>
-//                   {(provided, snapshot) => (
-//                     <li
-//                       className="stilerow"
-//                       ref={provided.innerRef}
-//                       {...provided.draggableProps}
-//                       {...provided.dragHandleProps}
-//                     >
-//                       {" "}
-//                       <div className="smalltile">
-//                         <h4 className="title">{val.id}</h4>
-//                       </div>
-//                     </li>
-//                   )}
-//                 </Draggable>
-//               )
-//             })}
+//             {list.map((val, key, index) => (
+//               <Draggable draggableId={val.id} key={val.id} index={index}>
+//                 {(provided, snapshot) => (
+//                   // <li
+//                   //   className="stilerow"
+//                   //   ref={provided.innerRef}
+//                   //   {...provided.draggableProps}
+//                   //   {...provided.dragHandleProps}
+//                   // >
+//                   //   {" "}
+//                   <div
+//                     className="smalltile"
+//                     ref={provided.innerRef}
+//                     {...provided.draggableProps}
+//                     {...provided.dragHandleProps}
+//                   >
+//                     <h4 className="title">{val.title}</h4>
+//                   </div>
+//                   // </li>
+//                 )}
+//               </Draggable>
+//             ))}
 //             {provided.placeholder}
-//           </ul>
+//           </div>
 //         )}
 //       </Droppable>
 //     </DragDropContext>

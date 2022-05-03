@@ -11,6 +11,6 @@ export const SmallTileData = [
   { id: "8", title: "Free for favorites" },
   { id: "9", title: "Free for favorites" },
   { id: "10", title: "Free for favorites" },
-  { id: "11", title: "Free for favorites" },
+  { id: "11", title: "new" },
   { id: "12", title: "Free for favorites" },
 ]
